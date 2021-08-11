@@ -14,17 +14,24 @@ hash = "B65283762F29121E"
         value = 0x4800
 
 [[patch]]
-    name = "Disable Post-Processing"
-    desc = "Expands the original washed-out color palette, disables aggressive tonemapping and other post-processing."
-    author = "illusion,boma"
+    name = "Disable Most Post FXs"
+    desc = "None"
+    author = "illusion, boma"
     is_enabled = false
 
     [[patch.be16]]
         address = 0x82289dc0
         value = 0x4800
     [[patch.be32]]
-        address = 0x8227E664
-        value = 0x60000000
-    [[patch.be32]]
         address = 0x8227E660
-        value = 0x60000000
+        value = 0x48000008
+
+[[patch]]
+    name = "8x Anisotropic Filtering"
+    desc = "Game does not natively support 16x sampling."
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x82487484
+        value = 0x38A00010
