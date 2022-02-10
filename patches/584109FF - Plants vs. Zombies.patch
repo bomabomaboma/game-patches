@@ -1,11 +1,10 @@
 title_name = "Plants vs. Zombies"
 title_id = "584109FF"
 hash = "637FE58E99423985"
-#media_id = "528550BC"
 
 [[patch]]
     name = "More Sunlight Please!"
-    author = "TeddyHammer"
+    author = "Serenity"
     is_enabled = false
 
     [[patch.be32]]
@@ -14,7 +13,7 @@ hash = "637FE58E99423985"
 
 [[patch]]
     name = "No Wait Time"
-    author = "TeddyHammer"
+    author = "Serenity"
     is_enabled = false
 
     [[patch.be32]]

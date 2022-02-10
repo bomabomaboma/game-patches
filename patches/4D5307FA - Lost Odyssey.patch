@@ -1,0 +1,59 @@
+title_name = "Lost Odyssey"
+title_id = "4D5307FA"
+#hash = "99CA6ACD4BA96084" # Disc 1
+#hash = "B24E02CFFC2FDE56" # Disc 2
+#hash = "B3E2B9D199685FF8" # Disc 3
+#hash = "E9B7CF54159C687A" # Disc 4
+
+[[patch]]
+    name = "60 FPS"
+    desc = "Disabling vsync in Xenia config for over 60 fps is not recommended as it causes numerous gameplay issues."
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be8]]
+        address = 0x827B4A0F
+        value = 0x01
+
+[[patch]]
+    name = "Disable Depth of Field"
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be8]]
+        address = 0x82305D74
+        value = 0x40
+
+[[patch]]
+    name = "Disable Motion Blur"
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be8]]
+        address = 0x826E1884
+        value = 0x40
+
+[[patch]]
+    name = "16x Anisotropic Filtering"
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be8]]
+        address = 0x823B93CF
+        value = 0x10
+
+[[patch]]
+    name = "Disable Dynamic Shadows"
+    desc = "Provides a moderate performance boost, especially when using custom resolution scaling."
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be16]]
+        address = 0x823D5FCC
+        value = 0x4800
+    [[patch.be16]]
+        address = 0x823D5A98
+        value = 0x4800
+    [[patch.be32]]
+        address = 0x823DE090
+        value = 0x60000000

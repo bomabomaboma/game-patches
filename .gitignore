@@ -1,0 +1,19 @@
+# Xenia
+/cache*
+/content
+/dumps
+/scratch
+/trace*
+*.config*
+*.toml
+*.exe
+*.log
+*.pdb
+*.sav
+*.txt
+
+# Everything else
+*.iso
+*.xex
+
+.vscode/*

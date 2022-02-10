@@ -1,11 +1,11 @@
 title_name = "Hydro Thunder Hurricane"
 title_id = "5841096A"
+hash = "909F5A586DC17D55"
 
 [[patch]]
     name = "Skip infinite loop on race end"
-    desc = "None"
     author = "Gliniak"
-    is_enabled = true
+    is_enabled = false
 
     [[patch.be32]]
         address = 0x82379B3C

@@ -1,15 +1,15 @@
 title_name = "Final Fantasy 13"
 title_id = "535107E4"
+#hash = ""
 
 [[patch]]
     name = "60 FPS"
-    desc = "None"
     author = "illusion"
     is_enabled = false
 
     [[patch.be32]]
-        address = 0x827b6b48
+        address = 0x827B6B48
         value = 0x39600001
     [[patch.be32]]
-        address = 0x827b6b7c
+        address = 0x827B6B7C
         value = 0x39400001

@@ -3,8 +3,8 @@ title_id = "53450812"
 hash = "C031CE0A3D7B711F"
 
 [[patch]]
-    name = "1280x720 Rendering"
-    desc = "Patches the game to render at 1280x720 instead of 880x720."
+    name = "1280x720 Resolution"
+    desc = "Original resolution is 880x720."
     author = "slashiee, ICUP321"
     is_enabled = false
 
@@ -13,17 +13,26 @@ hash = "C031CE0A3D7B711F"
         value = 0x38800500
     [[patch.be32]]
         address = 0x8327B450
-        value = 0x3f800000
+        value = 0x3F800000
     [[patch.be32]]
         address = 0x8327B454
-        value = 0x3f800000
+        value = 0x3F800000
     [[patch.be32]]
         address = 0x8327B458
-        value = 0x3f800000
+        value = 0x3F800000
+
+[[patch]]
+    name = "Disable Shadow Maps"
+    desc = "Disables all dynamic shadows cast. Strongly improves performance at the expense of visual fidelity."
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x82BA6810
+        value = 0x39600000
 
 [[patch]]
     name = "Disable Depth of Field"
-    desc = ""
     author = "boma"
     is_enabled = false
 
@@ -43,3 +52,13 @@ hash = "C031CE0A3D7B711F"
     [[patch.be32]]
         address = 0x82FB9BE0
         value = 0x60000000
+
+[[patch]]
+    name = "Aspect Ratio"
+    desc = "Default is 21:9 (3440/1440). Requires present_letterbox to be changed from true to false in the Xenia config."
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x820285B8
+        value = 0x4018E38E

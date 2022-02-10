@@ -1,41 +1,38 @@
 title_name = "Mirror's Edge"
 title_id = "45410850"
 hash = "B1DFF4F33956DE2B"
-#media_id = "426CA5A2"
 
 [[patch]]
     name = "FPS Unlock"
-    desc = "Removes FPS Cap. Users will need to set vsync to false in Xenia Options for the patch to take effect."
+    desc = "Removes FPS cap. Requires vsync to be changed from true to false in the Xenia config."
     author = "illusion"
     is_enabled = false
 
     [[patch.be32]]
-        address = 0x8254f5fc
+        address = 0x8254F5FC
         value = 0x60000000
-		
+
 [[patch]]
     name = "Disable Lens Flares"
-    desc = "Fixes bright lights that incorrectly shine through walls."
+    desc = "Fixes unoccluded bright lights on-screen."
     author = "boma"
     is_enabled = false
 
     [[patch.be32]]
-        address = 0x8233ac08
+        address = 0x8233AC08
         value = 0x39400000
-		
+
 [[patch]]
     name = "Disable Motion Blur"
-    desc = ""
     author = "boma"
     is_enabled = false
 
     [[patch.be32]]
-        address = 0x8239ad24
-        value = 0x3af50000
+        address = 0x8239AD24
+        value = 0x3AF50000
 
 [[patch]]
     name = "16x Anisotropic Filtering"
-    desc = ""
     author = "boma"
     is_enabled = false
 
@@ -45,10 +42,9 @@ hash = "B1DFF4F33956DE2B"
 
 [[patch]]
     name = "Disable Bloom+DoF"
-    desc = ""
     author = "illusion"
     is_enabled = false
 
     [[patch.be8]]
-        address = 0x8270f018
+        address = 0x8270F018
         value = 0x40

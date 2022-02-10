@@ -1,11 +1,58 @@
 title_name = "Banjo-Kazooie® Nuts"
 title_id = "4D5307ED"
 hash = "DF7BB7E5C2BE89B1"
-#media_id = "3E567DFF"
+
+[[patch]]
+    name = "60 FPS"
+    author = "Margen67"
+    is_enabled = false
+
+    [[patch.be8]]
+        address = 0x8228A83B
+        value = 0x01
+
+[[patch]]
+    name = "16x Anisotropic Filtering"
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x82B96D7C
+        value = 0x38A00010
+    [[patch.be32]]
+        address = 0x82B96E10
+        value = 0x38A00010
+    [[patch.be32]]
+        address = 0x82B96E10
+        value = 0x38A00010
+    [[patch.be32]]
+        address = 0x82B96B98
+        value = 0x38A00010
+    [[patch.be32]]
+        address = 0x823A8308
+        value = 0x38A00010
+
+[[patch]]
+    name = "Disable Motion Blur"
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be16]]
+        address = 0x8229F480
+        value = 0x4800
+
+[[patch]]
+    name = "Disable SSAO"
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be16]]
+        address = 0x8235F350
+        value = 0x4800
 
 [[patch]]
     name = "Notes Never Decrease"
-    author = "Etokapa , TeddyHammer"
+    author = "Etokapa, Serenity"
     is_enabled = false
 
     [[patch.be32]]
@@ -14,7 +61,7 @@ hash = "DF7BB7E5C2BE89B1"
 
 [[patch]]
     name = "Screen Always Bright"
-    author = "TeddyHammer"
+    author = "Serenity"
     is_enabled = false
 
     [[patch.be32]]

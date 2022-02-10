@@ -1,12 +1,11 @@
 title_name = "A Kingdom for Keflings"
 title_id = "584108DB"
 hash = "1B6F4BFA64747F55"
-#media_id = "6E19A707"
 
 [[patch]]
     name = "Unlimited Resources"
     desc = "Resource materials never decrease."
-    author = "TeddyHammer"
+    author = "Serenity"
     is_enabled = false
 
     [[patch.be32]]
