@@ -1,0 +1,18 @@
+title_name = "State of Decay" # TU5
+title_id = "584111E8"
+hash = "513745B21E19ABD4" # TODO: Hashes for TUs aren't correct
+
+[[patch]]
+    name = "Disable conditional rendering"
+    author = "illusion"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x8313A1BC
+        value = 0x39600000
+    [[patch.be32]]
+        address = 0x83139C24
+        value = 0x39600000
+    [[patch.be32]]
+        address = 0x831394CC
+        value = 0x39200000

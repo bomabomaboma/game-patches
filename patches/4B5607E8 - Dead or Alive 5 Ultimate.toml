@@ -1,0 +1,13 @@
+title_name = "Dead or Alive 5 Ultimate" # DOA
+title_id = "4B5607E8"
+hash = "6484F0805E01E757"
+
+[[patch]]
+    name = "Aspect Ratio"
+    desc = "See note about aspect ratio patches in README."
+    author = "Margen67"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x82101B0C
+        value = 0x4018E38E

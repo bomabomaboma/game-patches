@@ -1,0 +1,15 @@
+title_name = "Final Fantasy XIII-2 Demo" # 13
+title_id = "53518810"
+hash = "1FAF55E44128B6CA"
+
+[[patch]]
+    name = "60 FPS"
+    author = "illusion"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x8285FCEC
+        value = 0x39600001
+    [[patch.be32]]
+        address = 0x8285FD20
+        value = 0x39400001

@@ -1,19 +1,9 @@
-# Xenia
-/cache*
-/content
-/dumps
-/scratch
-/trace*
-*.config*
-*.toml
-*.exe
-*.log
-*.pdb
-*.sav
-*.txt
+*
+!*/
+!.gitattributes
+!.gitignore
 
-# Everything else
-*.iso
-*.xex
-
-.vscode/*
+!/create_patch.sh
+!/.github/**/*
+!/package.json
+!/patches/*.toml
