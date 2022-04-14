@@ -1,7 +1,6 @@
 title_name = "Minecraft" # XBLA, TU0
-title_id = "584111F7" # XA-4599
-hash = "8192027351071DCB" # default.xex
-#media_id = "7CD33B56"
+title_id = "584111F7"
+hash = "8192027C51071DCB"
 
 [[patch]]
     name = "Debug Menu"

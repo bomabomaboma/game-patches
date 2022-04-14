@@ -1,7 +1,6 @@
 title_name = "Red Dead Redemption" # GOTY/Game Of The Year, Disc 2
-title_id = "5454082B" # TT-2091
-hash = "C267D3CAF98E4368" # TODO: Add module filename
-#media_id = "3EE87B76" http://redump.org/disc/58711
+title_id = "5454082B"
+hash = "C267D3CAF98E4368"
 
 [[patch]]
     name = "Unlock FPS"
@@ -35,46 +34,6 @@ hash = "C267D3CAF98E4368" # TODO: Add module filename
         value = 0x38A00010
 
 [[patch]]
-    name = "360p Mode"
-    desc = "Internally renders the game at 360p and upscales to 720p. Certain objects and terrain will exhibit irregular pop-in."
-    author = "boma"
-    is_enabled = false
-
-    [[patch.be32]]
-        address = 0x8277035C
-        value = 0x39600001
-
-[[patch]]
-    name = "480p Mode"
-    desc = "Internally renders the game at 480p and upscales to 720p."
-    author = "boma"
-    is_enabled = false
-
-    [[patch.be32]]
-        address = 0x827702A8
-        value = 0x39400001
-
-[[patch]]
-    name = "540p Mode, 4x MSAA"
-    desc = "Internally renders the game at 540p, upscales to 720p and increases multisample anti-aliasing from 2x to 4x."
-    author = "carnishlardon, boma"
-    is_enabled = false
-
-    [[patch.be32]]
-        address = 0x827702E0
-        value = 0x38E00001
-
-[[patch]]
-    name = "No Trees - Performance Mode"
-    desc = "Prevents trees and all other foliage from rendering. Provides a substantial performance boost."
-    author = "boma"
-    is_enabled = false
-
-    [[patch.be32]]
-        address = 0x8276C3F0
-        value = 0x39600001
-
-[[patch]]
     name = "Skip Grass Occlusion"
     desc = "Gets rid of grass."
     author = "illusion, boma"
@@ -85,6 +44,16 @@ hash = "C267D3CAF98E4368" # TODO: Add module filename
         value = 0x4800
 
 [[patch]]
+    name = "No Trees"
+    desc = "Provides a substantial performance boost."
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x8276C3F0
+        value = 0x39600001
+
+[[patch]]
     name = "Disable Shadows"
     author = "boma"
     is_enabled = false
@@ -92,6 +61,16 @@ hash = "C267D3CAF98E4368" # TODO: Add module filename
     [[patch.be32]]
         address = 0x82927830
         value = 0x60000000
+
+[[patch]]
+    name = "480p Mode"
+    desc = "Internally renders the game at 480p and upscales to 720p. Certain objects and terrain will exhibit irregular pop-in."
+    author = "boma"
+    is_enabled = false
+
+    [[patch.be32]]
+        address = 0x827702A8
+        value = 0x39400001
 
 [[patch]]
     name = "Higher Quality Post Processing"
@@ -165,18 +144,6 @@ hash = "C267D3CAF98E4368" # TODO: Add module filename
     [[patch.be32]]
         address = 0x82C7603C
         value = 0x9007000C
-
-[[patch]]
-    name = "Bottomless Clip / Infinite Gun Magazine Size"
-    author = "illusion, boma"
-    is_enabled = false
-
-    [[patch.be32]]
-        address = 0x825B88AC
-        value = 0x48000008 # Skip fsub
-    [[patch.be32]]
-        address = 0x825B53A4
-        value = 0x48000018 # Skip ammo manipulation check
 
 [[patch]]
     name = "Infinite Ammo"

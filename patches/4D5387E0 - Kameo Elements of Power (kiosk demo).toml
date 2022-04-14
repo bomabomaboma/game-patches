@@ -1,7 +1,6 @@
 title_name = "Kameo: Elements of Power" # Kiosk demo
-title_id = "4D5387E0" # MS-34784
-hash = "B45B1C0D57295E9E" # demos/Kameo/default.xex
-#media_id = ""
+title_id = "4D5387E0"
+hash = "B45B1C0D57295E9E"
 
 [[patch]]
     name = "60 FPS"

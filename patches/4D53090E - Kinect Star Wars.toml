@@ -1,7 +1,6 @@
 title_name = "Kinect Star Wars"
-title_id = "4D53090E" # MS-2318
-hash = "98E936BD03D4011C" # default.xex
-#media_id = "0967FCD4"
+title_id = "4D53090E"
+hash = "98E936BD03D4011C"
 
 [[patch]]
     name = "60 FPS"

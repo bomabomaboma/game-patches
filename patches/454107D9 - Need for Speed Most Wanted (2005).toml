@@ -1,7 +1,6 @@
 title_name = "Need for Speed: Most Wanted" # NFS (2005)
-title_id = "454107D9" # EA-2009
-hash = "AAB47567B8183E97" # default.xex
-#media_id = ""
+title_id = "454107D9"
+hash = "AAB47567B8183E97"
 
 [[patch]]
     name = "Disable Post Processing"
