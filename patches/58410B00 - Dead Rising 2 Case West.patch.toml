@@ -1,6 +1,6 @@
-title_name = "DEADRISING 2 CASE WEST"
+title_name = "Dead Rising 2: Case West"
 title_id = "58410B00" # XA-2816
-#hash = "" # TODO: Add module filename
+#hash = "" # default.xex
 #media_id = "198BA306"
 
 [[patch]]
