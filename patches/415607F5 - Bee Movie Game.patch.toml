@@ -1,6 +1,6 @@
 title_name = "Bee Movie Game"
 title_id = "415607F5" # AV-2037
-#hash = "" # default.xex
+hash = "CDD27903BE15DDB2" # default.xex
 #media_id = "393A39F1" http://redump.org/disc/55424
 
 [[patch]]
@@ -9,5 +9,5 @@ title_id = "415607F5" # AV-2037
     is_enabled = false
 
     [[patch.be8]]
-        address = 0x8210B357
+        address = 0x8210b357
         value = 0x01
